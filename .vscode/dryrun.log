@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/thorsten/Documents/GitHub/hani-mandl'
+test -e .venv/bin/python || `command -v virtualenv` --python=python3 .venv
+.venv/bin/pip install platformio
+.venv/bin/platformio run
+make: Leaving directory `/Users/thorsten/Documents/GitHub/hani-mandl'
+ 

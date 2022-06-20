@@ -1,4 +1,4 @@
-#define WEIGHT_TYPE 2           // 0 = HX711 + Zelle
+#define WEIGHT_TYPE 0           // 0 = HX711 + Zelle
                                 // max3232 + geeichte Waage über rs232 angeschlossen:
                                 // 1 = TEM (currently NOT supported)
                                 // 2 = Delta-Cyprus
@@ -9,10 +9,10 @@
 // Hier den Code auf die verwendete Hardware einstellen
 //
 
-#define HARDWARE_LEVEL 3        // 1 = originales Layout mit Schalter auf Pin 19/22/21
+#define HARDWARE_LEVEL 2        // 1 = originales Layout mit Schalter auf Pin 19/22/21
                                 // 2 = Layout für V2 mit Schalter auf Pin 23/19/22
                                 // 3 = ESP32 WROOM-32 mit externem 0.96", 1.3" oder 2.4" OLED
-#define DISPLAY 4               // 1 = Heltec mit 0.96" oder 1.3" OLED per I2C
+#define DISPLAY 2              // 1 = Heltec mit 0.96" oder 1.3" OLED per I2C
                                 // 2 = ESP32-WROOM mit 0.96" oder 1.3" OLED per I2C
                                 // 3 = 2.24" OLED per I2C
                                 // 4 = 2.24" OLED per SPI
@@ -34,10 +34,10 @@
 //
 // Ab hier nur verstellen wenn Du genau weisst, was Du tust!
 //
-//#define isDebug 3             // serielle debug-Ausgabe aktivieren. Mit >3 wird jeder Messdurchlauf ausgegeben
+#define isDebug 3             // serielle debug-Ausgabe aktivieren. Mit >3 wird jeder Messdurchlauf ausgegeben
                                 // ACHTUNG: zu viel Serieller Output kann einen ISR-Watchdog Reset auslösen!
 //#define POTISCALE             // Poti simuliert eine Wägezelle, nur für Testbetrieb!
-#define MAXIMALGEWICHT 1000     // Maximales Gewicht
+#define MAXIMALGEWICHT 5000     // Maximales Gewicht
 
 // Ansteuerung der Waage
 #define SCALE_READS 2      // Parameter für hx711 Library. Messwert wird aus der Anzahl gemittelt

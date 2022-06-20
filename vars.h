@@ -112,13 +112,13 @@ struct glas {
   int TripCount;  //Kud
   int Count;      //Kud
 };
-const char *GlasTypArray[3] = { "DIB", "TOF", "DEE"};//DIB = DeutscherImkerBund-Glas DEE= DeepTwist-Glas TOF= TwistOff-Glas //JB
+const char *GlasTypArray[5] = { "NEU", "DTO", "TOF", "DIB", "PRO" };//DIB = DeutscherImkerBund-Glas DEE= DeepTwist-Glas TOF= TwistOff-Glas //JB
 struct glas glaeser[5] =            { 
-                                         {  125, 0, -9999, 0, 0 },
-                                         {  250, 1, -9999, 0, 0 },
-                                         {  250, 2, -9999, 0, 0 },
+                                         {  250, 0, -9999, 0, 0 },
+                                         {  500, 0, -9999, 0, 0 },
+                                         {  250, 1 -9999, 0, 0 },
                                          {  500, 1, -9999, 0, 0 },
-                                         {  500, 0, -9999, 0, 0 } 
+                                         {  50, 2, -9999, 0, 0 }, 
                                     };
 
 // Allgemeine Variablen

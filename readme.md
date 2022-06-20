@@ -20,7 +20,7 @@ Websites:
 Das Verhalten des Codes wird über mehrere `#define`-Variablen gesteuert.
 
 ```
-#define WEIGHT_TYPE 1           
+#define WEIGHT_TYPE 0           
   0 = für den Betrieb mit HX711 + Zelle (Urform des HaniMandl)
   Mittels rs232 angeschlossene (geeichte) Waagen:
   1 = TEMstandard (aktuell noch im Test) 
