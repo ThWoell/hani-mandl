@@ -98,7 +98,8 @@ const char versionTag[] = "v.0.2.13-a4d";
 #include <Arduino.h>
 #include <Wire.h>
 #include <U8g2lib.h>      /* aus dem Bibliotheksverwalter */
-#include <ESP32Servo.h>   /* aus dem Bibliotheksverwalter */
+#include <Servo.h>
+//#include <ESP32Servo.h>   /* aus dem Bibliotheksverwalter */
 #include <Preferences.h>  /* aus dem BSP von expressif, wird verfügbar wenn das richtige Board ausgewählt ist */
 #include "defs.h"
 #if WEIGHT_TYPE == 0      
